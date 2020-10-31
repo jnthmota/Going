@@ -1,3 +1,4 @@
+// Declarando e iniciando variaveis.
 package main
 
 import "fmt"
