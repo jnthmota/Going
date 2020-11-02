@@ -13,6 +13,5 @@ func todo() {
 
 func main() {
 	todo()
-
 	//fmt.Println()
 }
