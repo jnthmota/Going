@@ -35,8 +35,12 @@ func main() {
 	}
 	//var c1 Car
 	//fmt.Println(c)
+
+	//1
 	c.Print()
+	//2
 	c.Drive()
+	//3
 	fmt.Println(c.GetName())
 
 }
