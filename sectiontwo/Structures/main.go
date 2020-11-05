@@ -20,6 +20,11 @@ func (c Car) Print() {
 func (c Car) Drive() {
 	fmt.Println("Driving fast ....")
 }
+
+//3
+func (c Car) GetName() string {
+	return c.Name
+}
 func main() {
 	//c := Car{"Posche", 1, 2}
 	// another way
@@ -32,5 +37,6 @@ func main() {
 	//fmt.Println(c)
 	c.Print()
 	c.Drive()
+	fmt.Println(c.GetName())
 
 }
