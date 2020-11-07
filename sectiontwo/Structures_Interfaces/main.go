@@ -12,11 +12,15 @@ type Lambo struct {
 }
 
 func NewModel(arg string) Car {
-	return &Lambo(arg)
+	return &Lambo{arg}
 }
 
 type Chevy struct {
 	ChevyModel string
+}
+
+func (l *Lambo) Stop() {
+	fmt.Println("Stopping lambo")
 }
 
 func (l *Lambo) Drive() {
