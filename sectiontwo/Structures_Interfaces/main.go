@@ -11,6 +11,10 @@ type Lambo struct {
 	LamboModel string
 }
 
+func NewModel(arg string) Car {
+	return &Lambo(arg)
+}
+
 type Chevy struct {
 	ChevyModel string
 }
@@ -26,7 +30,8 @@ func (c *Chevy) Drive() {
 }
 
 func main() {
-	l := Lambo{"Gallardo"}
+	//l := Lambo{"Gallardo"}
+	l := NewModel("Garllardo")
 	c := Chevy{"C369"}
 	l.Drive()
 	c.Drive()
